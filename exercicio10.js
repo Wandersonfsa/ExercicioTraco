@@ -1,6 +1,15 @@
-var arr = ["8", "8", "444.9", "528.9", "528.9"];
-var min = arr.map(Number).reduce(function(a, b) {
-  return Math.min(a, b);
-});
+let valorA = document.getElementById("valorA");
+let valorB = document.getElementById("valorB");
+let valorC = document.getElementById("valorC");
+let resultado = document.getElementById("resultado");
 
-console.log(min); // 444.9
+
+function calculo (a, b, c) {
+
+       a = Number(valorA.value);
+       b = Number(valorB.value);
+       c = Number(valorC.value);
+
+      resultado.innerHTML = `Menor: ${Math.min(a, b, c)}`;
+
+};
