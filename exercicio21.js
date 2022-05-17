@@ -1,10 +1,20 @@
 let valorA = document.getElementById("valorA");
 let resultado = document.getElementById("resultado");
 
-function calcular (a) {
-    a = Number (valorA.value);
-    let soma = [];
-    for (let i = 0; i <=a; i+=2)
-    soma = i;
-    resultado.innerHTML = soma;
-}
+let exercicio21 = {
+
+    valor: [],
+    
+    calculo: function () {
+        let num = valorA.value;
+        
+        for (i = 2; i <= num; i++) {
+            if (i % 2 == 0){
+                this.valor.push (i)
+                resultado.innerHTML = this.valor;
+            };
+        };
+    }
+
+
+};
