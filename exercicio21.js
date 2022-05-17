@@ -1,20 +1,14 @@
 let valorA = document.getElementById("valorA");
 let resultado = document.getElementById("resultado");
 
-let exercicio21 = {
 
-    valor: [],
-    
-    calculo: function () {
+function  calculo() {
         let num = valorA.value;
-        
+        let html = '';
         for (i = 2; i <= num; i++) {
-            if (i % 2 == 0){
-                this.valor.push (i)
-                resultado.innerHTML = this.valor;
+            if (i % 2 === 0){
+                html += i + '<br/>'
+                resultado.innerHTML = html;
             };
-        };
-    }
-
-
-};
+        }
+    };
