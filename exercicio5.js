@@ -14,5 +14,4 @@ var exercicio5 = {
         saidaArea.innerHTML = this.area;
 
     }
-
-}
+};

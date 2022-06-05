@@ -6,10 +6,10 @@ function signo() {
     let numDay = dia.value;
     let numMes = mes.value;
 
-    
-    if (numMes < 1 || numMes > 12) { alert ('Mês inválido!!!')}
 
-    if (numDay < 1 || numDay > 31) { alert ('Dia inválido!!!')}
+    if (numMes < 1 || numMes > 12) { alert('Mês inválido!!!') }
+
+    if (numDay < 1 || numDay > 31) { alert('Dia inválido!!!') }
 
     if ((numMes == 1 && numDay < 20) || (numMes == 12 && numDay >= 22)) {
         resultado.innerHTML = ("<h1>Capricornio</h1>");
@@ -65,6 +65,8 @@ function signo() {
 
     }
 
-    if ((numMes == 12 && numDay < 22) || (numMes == 11 && numDay >= 20)) { resultado.innerHTML = ("<h1>Sagitarios</h1>"); }
+    if ((numMes == 12 && numDay < 22) || (numMes == 11 && numDay >= 20)) {
+        resultado.innerHTML = ("<h1>Sagitarios</h1>");
+    }
 
 }

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">Exercicios</header>
+    <button data-abre-modal="#exercicio1">1</button>
+    <button data-abre-modal="#exercicio2">2</button>
+    <button data-abre-modal="#exercicio3">3</button>
+    <button data-abre-modal="#exercicio4">4</button>
+    <button data-abre-modal="#exercicio5">5</button>
+    <button data-abre-modal="#exercicio6">6</button>
+    <button data-abre-modal="#exercicio7">7</button>
+    <button data-abre-modal="#exercicio8">8</button>
+    <button data-abre-modal="#exercicio9">9</button>
+    <button data-abre-modal="#exercicio10">10</button>
+    <button data-abre-modal="#exercicio11">11</button>
+    <button data-abre-modal="#exercicio12">12</button>
+    <button data-abre-modal="#exercicio13">13</button>
+    <button data-abre-modal="#exercicio14">14</button>
+    <button data-abre-modal="#exercicio15">15</button>
+    <button data-abre-modal="#exercicio16">16</button>
+    <button data-abre-modal="#exercicio17">17</button>
+    <button data-abre-modal="#exercicio18">18</button>
+    <button data-abre-modal="#exercicio19">19</button>
+    <button data-abre-modal="#exercicio20">20</button>
+    <button data-abre-modal="#exercicio21">21</button>
+    <button data-abre-modal="#exercicio22">22</button>
+    <button data-abre-modal="#exercicio23">23</button>
+    <button data-abre-modal="#exercicio24">24</button>
+    <button data-abre-modal="#exercicio25">25</button>
+    <button data-abre-modal="#exercicio26">26</button>
+    <button data-abre-modal="#exercicio27">27</button>
+    <button data-abre-modal="#exercicio28">28</button>
+    <button data-abre-modal="#exercicio29">29</button>
+    <button data-abre-modal="#exercicio30">30</button>
+
+    <div id="exercicio1" class="modal">
+        <header>
+            <h2>Exercicio 1</h2>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Largura do terreno
+                    <input id="largura">
+                </label><br>
+                <label>Comprimento do terreno
+                    <input id="comprimento">
+                </label><br>
+                <label>Valor do metro quadrado
+                    <input id="valor">
+                </label><br>
+                <input type="button" value="Calcular" onclick="exercicioUM.calculo()"><br>
+
+                <p id="areaTerreno">Àrea do terreno:</p>
+                <p id="precoTerreno">Preço do terreno:</p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio2" class="modal">
+        <header>
+            <h2>Exercicio 2</h2>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Base do retângulo:
+                    <input id="base">
+                </label><br>
+                <label>Altura do retângulo:
+                    <input id="altura">
+                </label><br>
+                <input type="button" value="Calcular" onclick="exercicio.calculo()">
+                <p id="area">Área =</p>
+                <p id="perimetro">Perímetro = </p>
+                <p id="diagonal">Diagonal = </p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio3" class="modal">
+        <header>
+            <h2>Exercicio 3</h2>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Nome1:
+                    <input type="text" id="nome1">
+                </label><br>
+                <label>Idade1:
+                    <input id="idade1">
+                </label><br>
+                <label>Nome2:
+                    <input id="nome2">
+                </label><br>
+                <label>Idade2:
+                    <input id="idade2">
+                </label><br>
+                <input type="button" value="Media" onclick="exercicio3.calculo()">
+
+                <p id="resultadoEx3"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio4" class="modal">
+        <header>
+            <h2>Exercicio 4</h2>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Preço unitário do produto:
+                    <input id="preco">
+                </label><br>
+
+                <label>Quantidade comprada:
+                    <input id="quantidade">
+                </label><br>
+
+                <label>Dinheiro recebido:
+                    <input id="pagamento">
+                </label><br>
+
+                <input type="button" value="Receber" onclick="exercicio4.calculo()">
+
+                <p id="troco"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio5" class="modal">
+        <header>
+            <h2>Exercicio 5</h2>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Digite o valor do raio do círculo:
+                    <input id="raio">
+                </label><br>
+
+                <input type="button" id="raio" value="Verificar" onclick="exercicio5.calculo()"><br>
+
+                <div id="area"></div>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio6" class="modal">
+        <header>
+            <h2>Exercicio 6</h2>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label for="">Nome: <br>
+                    <input type="text" id="name">
+                </label><br>
+                <label for="">Valor por hora: <br>
+                    <input id="valorHora" class="Preco">
+                </label><br>
+                <label for="">Horas trabalhadas:<br>
+                    <input id="horaTrabalhada" class="Preco">
+                </label><br>
+                <input type="button" value="Calculo" onclick="exercicio6.calculo()">
+                <p id="saida"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio7" class="modal">
+        <header>
+            <h2>Exercicio 7</h2>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Distância percorrida:
+                    <input id="kmPercorridos">
+                </label><br>
+
+                <label>Combustível gasto:
+                    <input id="combustivel" class="distancia">
+                </label><br>
+
+                <input type="button" value="Calcular" onclick="exercicio7.calculo()">
+
+                <p id="consumo"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio8" class="modal">
+        <header>
+            <h2>Exercicio 8</h2>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Digite a medida A:
+                    <input class="medida" id="medidaA">
+                </label><br>
+
+                <label>Digite a medida B:
+                    <input class="medida" id="medidaB">
+                </label><br>
+
+                <label>Digite a medida C:
+                    <input class="medida" id="medidaC">
+                </label><br>
+
+                <input type="button" value="Calcular" onclick="exercicio8.calculo()">
+
+                <p id="resultadoA"></p>
+                <p id="resultadoB"></p>
+                <p id="resultadoC"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio9" class="modal">
+        <header>
+            <h2>Exercicio 9</h2>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Digite a duração em segundos:
+                    <input id="segundosA">
+                </label><br>
+                <label>Digite a duração em segundos:
+                    <input id="segundosB">
+                </label><br>
+                <label>Digite a duração em segundos:
+                    <input id="segundosC">
+                </label><br>
+
+                <input type="button" value="pressione" onclick="somar()">
+                <p id="aqui"></p>
+                <p id="aqui2"></p>
+                <p id="aqui3"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio10" class="modal">
+        <header>
+            <h2>Exercicio 10</h2>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Primeiro valor:
+                    <input id="valorA" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                </label>
+                <label>Segundo valor:
+                    <input id="valorB" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                </label>
+                <label>Terceiro valor:
+                    <input id="valorC" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                </label>
+
+                <input type="button" value="Clique Aqui" onclick="calculo()">
+                <p id="resultadoMenor"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio11" class="modal">
+        <header>
+            <h2>Exercicio 11</h2>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Digite a primeira nota:
+                    <input class="entrada" id="notaA">
+                </label><br>
+                <label>Digite a segunda nota:
+                    <input class="entrada" id="notaB">
+                </label><br>
+                <input type="button" value="Calcular" onclick="calculoEx11()"><br>
+                <p id="resultadoAluno"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio12" class="modal">
+        <header>
+            <h5>Fazer um programa para ler os três coeficientes de uma equação do
+                segundo grau. Usando a fórmula de Bhaskara, calcular e mostrar os valores
+                das raízes x1 e x2 da equação com quatro casas decimais, conforme
+                exemplos. Se a equação não possuir raízes reais, mostrar uma mensagem.</h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Coeficiente a:
+                    <input id="coeficienteA">
+                </label><br>
+                <label>Coeficiente b:
+                    <input id="coeficienteB">
+                </label><br>
+                <label>Coeficiente c:
+                    <input id="coeficienteC">
+                </label><br>
+                <input type="button" value="Pressione" onclick="exercicio12.calculo()">
+                <p id="calculoCo"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio13" class="modal">
+        <header>
+            <h5>Uma operadora de telefonia cobra R$ 50.00 por um plano básico que dá
+                direito a 100 minutos de telefone. Cada minuto que exceder a franquia de
+                100 minutos custa R$ 2.00. Fazer um programa para ler a quantidade de
+                minutos que uma pessoa consumiu, daí mostrar o valor a ser pago.</h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Digite a quantidade de minutos:
+                    <input type="text" id="valorMin">
+                </label><br>
+                <input type="button" value="Pressione" onclick="calculoMin()">
+                <p id="precoMin"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio14" class="modal">
+        <header>
+            <h5>Fazer um programa para calcular o troco no processo de pagamento de
+                um produto de uma mercearia. O programa deve ler o preço unitário do
+                produto, a quantidade de unidades compradas deste produto, e o valor em
+                dinheiro dado pelo cliente. Seu programa deve mostrar o valor do troco a
+                ser devolvido ao cliente. Se o dinheiro dado pelo cliente não for suficiente,
+                mostrar uma mensagem informando o valor restante conforme exemplo.</h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Preço unitário do produto:
+                    <input id="precoProduto" class="valor">
+                </label><br>
+                <label>Quantidade comprada:
+                    <input id="qtdComprada">
+                </label><br>
+                <label>Dinheiro recebido:
+                    <input class="valor" id="dinheiro">
+                </label><br>
+                <input type="button" value="Pressione" onclick="calcularTroco()">
+                <p id="trocoProduto"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio15" class="modal">
+        <header>
+            <h5>Fazer um programa para ler a quantidade de glicose no sangue de uma
+                pessoa e depois mostrar na tela a classificação desta glicose de acordo
+                com a tabela de referência abaixo:</h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Digite a medida da glicose:
+                    <input class="valorGlicose" id="medida">
+                </label><br>
+                <input type="button" value="Resultado" onclick="exercicio15.calculo()">
+                <p id="classificacao"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio16" class="modal">
+        <header>
+            <h5>No arremesso de dardo, o atleta tem três chances para lançar o dardo à
+                maior distância que conseguir. Você deve criar um programa para, dadas
+                as medidas das três tentativas de lançamento, informar qual foi a maior.</h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Digite as 3 distâncias:
+                    <input id="distanciaA" class="valorDistancia">
+                    <input id="distanciaB" class="valorDistancia">
+                    <input id="distanciaC" class="valorDistancia">
+                </label>
+                <input type="button" value="Maior Distância" onclick="maiorDistancia()"><br>
+                <p id="resultadoDistancia"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio17" class="modal">
+        <header>
+            <h5>Fazer um programa para ler dois números inteiros, e dizer se um número é
+                múltiplo do outro. Os números podem ser digitados em qualquer ordem.</h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Digite dois números inteiros:
+                    <input id="inteiroA" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    <input id="inteiroB" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                </label>
+                <input type="button" value="Resultado" onclick="ordenarInteiros()"><br>
+                <p id="ordemInteiros"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+
+    </div>
+    <div id="exercicio18" class="modal">
+        <header>
+            <h5>Deseja-se converter uma medida de temperatura da escala Celsius para
+                Fahrenheit ou vice-versa. Para isso, você deve construir um programa que
+                leia a letra "C" ou "F" indicando em qual escala vai ser informada uma
+                temperatura. Em seguida, o programa deve mostrar a temperatura na
+                outra escala com duas casas decimais. Você deve pesquisar as fórmulas
+                para conversão de Fahrenheit->Celsius e de Celsius->Fahrenheit.</h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <p>Conversão de temperatura:</p>
+                <input type="radio" name="converter" id="CtoF" />Celsius para Fahrenheit <br />
+                <input type="radio" name="converter" id="FtoC" />Fahrenheit para Celsius <br />
+                Converter temperatura :<input id="num" type="number"> <br />
+                <button onclick="convercaoTemp()">Calcular</button><br />
+                <p id="converterTemp"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+    </div>
+    <div id="exercicio19" class="modal">
+        <header>
+            <h5>Uma empresa vai conceder um aumento percentual de salário aos seus
+                funcionários dependendo de quanto cada pessoa ganha, conforme tabela.
+                Fazer um programa para ler o salário de uma pessoa, daí mostrar
+                qual o novo salário dessa pessoa depois do aumento, quanto foi o aumento
+                e qual foi a porcentagem de aumento.<br>
+                Salário atual:<br>
+                Até R$ 999.00 -> Aumento de 20%. <br>
+                Entre R$ 1000.00 e R$ 2999.00 - > Aumento de 15%. <br>
+                Entre R$ 3000.00 e R$ 7999.00 -> Aumento de 10%. <br>
+                Acima de R$ 8000.00 -> Aumento de 05%
+            </h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Digite o salário:
+                    <input id="salarioValor" class="valorSalario">
+                </label>
+                <input type="button" value="Calcular" onclick="exercicio19.calculo()"><br>
+                <p id="aumento"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+    </div>
+    <div id="exercicio20" class="modal">
+        <header>
+            <h5>Escreva um programa que exiba a soma de todos os números
+                compreendidos entre um intervalo dado pelo usuário.
+            </h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Número inicial:
+                    <input id="intervaloA" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    Número final:
+                    <input id="intervaloB" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                </label>
+                <input type="button" value="Verificar" onclick="calculoIntervalo()">
+                <p id="verificarIntervalo"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+    </div>
+    <div id="exercicio21" class="modal">
+        <header>
+            <h5>Leia um valor inteiro X. Em seguida mostre os pares de 1 até X, um valor por
+                linha, inclusive o X, se for o caso.
+            </h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Digite um valor:
+                    <input id="valorInteiro" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    <input type="button" value="Calcular" onclick="calculo()">
+                </label>
+                <p id="verPares"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+    </div>
+    <div id="exercicio22" class="modal">
+        <header>
+            <h5>
+                Ler um número inteiro N, daí mostrar na tela a tabuada de N para 1 a 10,
+                conforme exemplo.
+            </h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                Tabuada do número: <input id="numTab"> <br />
+                <input type="button" value="Tabuada" onclick="tabuada()"><br />
+                Tabuada: <br />
+                <p id="calculoTab"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+    </div>
+    <div id="exercicio23" class="modal">
+        <header>
+            <h5>
+                Leia dois valores inteiros X e Y. A seguir, calcule e mostre a soma dos
+                números ímpares entre eles.
+            </h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Número inicial:
+                    <input id="inicial" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    Número final:
+                    <input id="final" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                </label>
+                <button id="botao">Calcular</button>
+                <p id="somaImp"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+    </div>
+    <div id="exercicio24" class="modal">
+        <header>
+            <h5>
+                Receber 5 valores numéricos inteiros; Ordenar os valores em ordem
+                crescente; Exibir os valores ordenados.
+            </h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Inserir números:
+                    <input type="text" class="input1" />
+                </label>
+
+                <button class="ordenarInt">Ordenar em ordem crescente</button>
+
+                <h2 id="resOrdem"></h2>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+    </div>
+    <div id="exercicio25" class="modal">
+        <header>
+            <h5>
+                Receber valores numéricos para o dia e o mês de nascimento de uma
+                pessoa; Exibir o signo da pessoa de acordo com os seguintes critérios:
+            </h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Dia do Nascimento:
+                    <input id="dia"><br>
+                    Mês do Nascimento:
+                    <input id="mes"><br>
+                </label>
+                <input type="button" value="Signo" onclick="signo()">
+                <p id="signo"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+    </div>
+    <div id="exercicio26" class="modal">
+        <header>
+            <h5>
+                Fazer um programa para receber uma palavra (string); Calcular a
+                quantidade de vogais e a quantidade consoantes da palavra; Exibir os
+                valores calculados.
+            </h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Digíte uma palavra:
+                    <input id="entPalavra">
+                </label>
+                <input type="button" value="Calcular" onclick="somarLetras()">
+                <p id="ordPalavra"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+    </div>
+    <div id="exercicio27" class="modal">
+        <header>
+            <h5>
+                Fazer um programa para verificar se um número ou palavra é palíndroma;
+                Exibir como saída se o número ou palavra "é palíndroma" ou "não é
+                palíndroma". Um palíndromo é algo que pode ser lido em qualquer
+                sentido. Ex.: 110011, Reger, Osso.
+            </h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Palavra ou numero:
+                    <input id="value">
+                </label>
+                <p id="palindrono"></p>
+                <input type="button" value="verificar" onclick="verPalindrono()">
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+    </div>
+    <div id="exercicio28" class="modal">
+        <header>
+            <h5>
+                Receber 5 valores numéricos e exibir apenas o Menor valor e o Maior valor;
+            </h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Inserir números:
+                    <input type="text" class="num1" placeholder="Insira 5 números">
+                </label>
+
+                <button class="ordMinMax">Verificar</button>
+
+                <h2 class="totalOrd" id="resultOrd"></h2>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+    </div>
+    <div id="exercicio29" class="modal">
+        <header>
+            <h5>
+                Pesquise o algoritmo de validação do CNPJ escreva um programa que
+                valide qualquer CNPJ dado.
+            </h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Insíra o CNPJ:
+                    <input type="text" id="cnpj">
+                </label>
+                <input type="button" value="Validar" onclick="validarCNPJ()">
+                <p id="validacao"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+    </div>
+    <div id="exercicio30" class="modal">
+        <header>
+            <h5>
+                Escreva um programa que receba um valor numérico de até dois
+                algarismos e transcreva esse valor por extenso.
+            </h5>
+            <span class="fechar-modal">x</span>
+        </header>
+        <div class="corpo-modal">
+            <div>
+                <label>Digite um numero de 0 a 99:
+                    <input id="entNum">
+                </label>
+                <input type="button" value="Verificar" onclick="escrever()">
+                <p id="extensoNum"></p>
+            </div>
+        </div>
+        <footer><button class="fechar-modal">Ok</button></footer>
+    </div>
+
+    <div id="mascara"></div>
+</body>
+<script src="index.js"></script>
+<script src="exercicios.js"></script>
+
+</html>

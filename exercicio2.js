@@ -23,10 +23,5 @@ var exercicio = {
 
         this.diagonal = Math.pow(base, 2) + Math.pow(altura, 2);
         saidaDiagonal.innerHTML = Math.sqrt(this.diagonal).toFixed(4);
-
-
     }
-
-
-
 };
