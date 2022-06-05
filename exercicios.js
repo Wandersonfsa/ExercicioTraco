@@ -43,13 +43,13 @@ var exercicio = {
         var altura = Number(saidaAltura.value);
 
         this.area = base * altura;
-        saidaArea.innerHTML = (this.area).toFixed(4);
+        saidaArea.innerHTML = `Área: ${this.area.toFixed(4)}`;
 
         this.perimetro = base * 2 + altura * 2;
-        saidaPerimetro.innerHTML = (this.perimetro).toFixed(4);
+        saidaPerimetro.innerHTML = `Perimetro: ${this.perimetro.toFixed(4)}`;
 
         this.diagonal = Math.pow(base, 2) + Math.pow(altura, 2);
-        saidaDiagonal.innerHTML = Math.sqrt(this.diagonal).toFixed(4);
+        saidaDiagonal.innerHTML = `Diagonal: ${Math.sqrt(this.diagonal).toFixed(4)}`;
     }
 };
 
@@ -252,15 +252,15 @@ function somar() {
 
 // Script exercício 10
 
-function calculo(a, b, c) {
-    let primeiroValor = document.getElementById("valorA");
-    let segundoValor = document.getElementById("valorB");
-    let terceiroValor = document.getElementById("valorC");
+function numMenor() {
+    let primeiroValor = document.getElementById("numeralA");
+    let segundoValor = document.getElementById("numeralB");
+    let terceiroValor = document.getElementById("numeralC");
     let resultadoEx10 = document.getElementById("resultadoMenor");
 
-    a = Number(primeiroValor.value);
-    b = Number(segundoValor.value);
-    c = Number(terceiroValor.value);
+    let a = Number(primeiroValor.value);
+    let b = Number(segundoValor.value);
+    let c = Number(terceiroValor.value);
 
     resultadoEx10.innerHTML = `Menor: ${Math.min(a, b, c)}`;
 };
@@ -391,8 +391,6 @@ $(function () {
     $('.valorDistancia').maskMoney({ decimal: '.', thousands: '', precision: 2 });
 });
 
-
-
 function maiorDistancia() {
     let resultado = document.getElementById("resultadoDistancia");
     let distanciaA = document.getElementById("distanciaA");
@@ -508,7 +506,7 @@ function calculoIntervalo() {
 
 // Script exercício 21
 
-function calculo() {
+function calculoX() {
     let valorA = document.getElementById("valorInteiro");
     let resultado = document.getElementById("verPares");
     let num = valorA.value;
@@ -536,15 +534,13 @@ function tabuada() {
 };
 // Script exercício 23
 
-
-
 function somaImp() {
     let valorA = document.getElementById("inicial");
     let valorB = document.getElementById("final");
     let resultado = document.getElementById("somaImp");
 
-    a = parseInt(valorA.value);
-    b = parseInt(valorB.value);
+    let a = parseInt(valorA.value);
+    let b = parseInt(valorB.value);
 
     let soma = 0;
     for (let i = a; i < b; i++) {
@@ -561,22 +557,24 @@ botao.addEventListener('click', () => {
 
 // Script exercício 24
 
-const input1 = document.querySelector(".input1");
-const btnConvert = document.querySelector(".ordenarInt");
+const input11 = document.querySelector(".input11");
+const btnConvert = document.querySelector(".ordenar11");
 
-function sortNumbers(inputText) {
-    let numArray = inputText.split(",");
-    numArray.sort((a, b) => { return a - b });
+function sortOrdem(inputText) {
+  let numArray = inputText.split(",");
+  numArray.sort((a,b) => {return a - b});
 
-    document.getElementById("resOrdem").innerText = (` ${numArray} `);
+  document.getElementById("resultado11").innerText = (` ${ numArray} `); 
 
-    return numArray;
+  return  numArray;
 }
 
+
 btnConvert.addEventListener('click', function () {
-    sortNumbers(input1.value);
+  sortOrdem(input11.value);
 
 });
+
 // Script exercício 25
 
 function signo() {
@@ -681,21 +679,24 @@ function verPalindrono() {
 };
 // Script exercício 28
 
-const ordemUM = document.querySelector(".num1");
-const convert = document.querySelector(".ordMinMax");
+const input1 = document.querySelector(".input1");
+const btnConvert1 = document.querySelector(".ordenar1");
 
-function sortNumbers(inputText) {
+function ordem(inputText) {
+  let numArray = inputText.split(",");
+  numArray.sort((a,b) => {return a - b});
 
-    let numArray = inputText.split(",");
-    numArray.sort((a, b) => { return a - b });
+  document.getElementById("resultadoOrdem").innerHTML = (` Menor número = ${ Math.min(...numArray)} Maior número = ${Math.max(...numArray)} `); 
 
-    document.getElementById("resultOrd").innerText = (` Menor número = ${Math.min(...numArray)} Maior número = ${Math.max(...numArray)} `);
+  return  numArray;
+}
 
-    return numArray;
-};
-convert.addEventListener('click', function () {
-    sortNumbers(ordemUM.value);
+
+btnConvert1.addEventListener('click', function () {
+  ordem(input1.value);
+
 });
+console.log(ordem)
 // Script exercício 29
 
 //Utilizando jquery para bloquear letras e o restante dos caracteres especiais.

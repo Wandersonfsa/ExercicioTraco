@@ -7,12 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="cabecalho">Exercicios</header>
+    <header class="cabecalho"><p>Programa Jovens Tegranos<br>
+        Nivelamento<br>
+        Lista de Exercícios de Lógica e Programação
+    </p></header>
+    <p class="text">Clique no exercício desejado:</p>
+<div class="container">
+
     <button data-abre-modal="#exercicio1">1</button>
     <button data-abre-modal="#exercicio2">2</button>
     <button data-abre-modal="#exercicio3">3</button>
@@ -43,10 +50,15 @@
     <button data-abre-modal="#exercicio28">28</button>
     <button data-abre-modal="#exercicio29">29</button>
     <button data-abre-modal="#exercicio30">30</button>
+</div>
 
     <div id="exercicio1" class="modal">
         <header>
-            <h2>Exercicio 1</h2>
+            <h5>Fazer um programa para ler as medidas da largura e comprimento de um
+                terreno retangular com uma casa decimal, bem como o valor do metro
+                quadrado do terreno com duas casas decimais. Em seguida, o programa
+                deve mostrar o valor da área do terreno, bem como o valor do preço do
+                terreno, ambos com duas casas decimais, conforme exemplo.</h5>
             <span class="fechar-modal">x</span>
         </header>
         <div class="corpo-modal">
@@ -61,9 +73,9 @@
                     <input id="valor">
                 </label><br>
                 <input type="button" value="Calcular" onclick="exercicioUM.calculo()"><br>
-
-                <p id="areaTerreno">Àrea do terreno:</p>
-                <p id="precoTerreno">Preço do terreno:</p>
+                
+                Área terreno:<p id="areaTerreno"></p>
+                Preço terreno:<p id="precoTerreno"></p>
             </div>
         </div>
         <footer><button class="fechar-modal">Ok</button></footer>
@@ -71,7 +83,9 @@
     </div>
     <div id="exercicio2" class="modal">
         <header>
-            <h2>Exercicio 2</h2>
+            <h5>Fazer um programa para ler as medidas da base e altura de um retângulo.
+                Em seguida, mostrar o valor da área, perímetro e diagonal deste retângulo,
+                com quatro casas decimais.</h5>
             <span class="fechar-modal">x</span>
         </header>
         <div class="corpo-modal">
@@ -93,7 +107,9 @@
     </div>
     <div id="exercicio3" class="modal">
         <header>
-            <h2>Exercicio 3</h2>
+            <h5>Fazer um programa para ler o nome e idade de duas pessoas. Ao final
+                mostrar uma mensagem com os nomes e a idade média entre essas
+                pessoas, com uma casa decimal.</h5>
             <span class="fechar-modal">x</span>
         </header>
         <div class="corpo-modal">
@@ -120,7 +136,11 @@
     </div>
     <div id="exercicio4" class="modal">
         <header>
-            <h2>Exercicio 4</h2>
+            <h5>Fazer um programa para calcular o troco no processo de pagamento de
+                um produto de uma mercearia. O programa deve ler o preço unitário do
+                produto, a quantidade de unidades compradas deste produto, e o valor em
+                dinheiro dado pelo cliente (suponha que haja dinheiro suficiente). Seu
+                programa deve mostrar o valor do troco a ser devolvido ao cliente.</h5>
             <span class="fechar-modal">x</span>
         </header>
         <div class="corpo-modal">
@@ -139,7 +159,7 @@
 
                 <input type="button" value="Receber" onclick="exercicio4.calculo()">
 
-                <p id="troco"></p>
+                Troco:<p id="troco"></p>
             </div>
         </div>
         <footer><button class="fechar-modal">Ok</button></footer>
@@ -147,7 +167,9 @@
     </div>
     <div id="exercicio5" class="modal">
         <header>
-            <h2>Exercicio 5</h2>
+            <h5>Fazer um programa para ler o valor "r" do raio de um círculo, e depois
+                mostrar o valor da área do círculo com três casas decimais. A fórmula da
+                área do círculo é a seguinte: área = π. r². O valor de π corresponde a 3.14159.</h5>
             <span class="fechar-modal">x</span>
         </header>
         <div class="corpo-modal">
@@ -166,7 +188,10 @@
     </div>
     <div id="exercicio6" class="modal">
         <header>
-            <h2>Exercicio 6</h2>
+            <h5>Fazer um programa para ler o nome de um(a) funcionário(a), o valor que
+                ele(a) recebe por hora, e a quantidade de horas trabalhadas por ele(a). Ao
+                final, mostrar o valor do pagamento do funcionário com uma mensagem
+                explicativa, conforme exemplo.</h5>
             <span class="fechar-modal">x</span>
         </header>
         <div class="corpo-modal">
@@ -189,7 +214,10 @@
     </div>
     <div id="exercicio7" class="modal">
         <header>
-            <h2>Exercicio 7</h2>
+            <h5>Fazer um programa para ler a distância total (em km) percorrida por um
+                carro, bem como o total de combustível gasto por este carro ao percorrer
+                tal distância. Seu programa deve mostrar o consumo médio do carro, com
+                três casas decimais.</h5>
             <span class="fechar-modal">x</span>
         </header>
         <div class="corpo-modal">
@@ -212,7 +240,11 @@
     </div>
     <div id="exercicio8" class="modal">
         <header>
-            <h2>Exercicio 8</h2>
+            <h5>Fazer um programa para ler três medidas A, B e C. Em seguida, calcular e
+                mostrar (imprimir os dados com quatro casas decimais):
+                a) a área do quadrado que tem lado A
+                b) a área do triângulo retângulo que base A e altura B
+                c) a área do trapézio que tem bases A e B, e altura C</h5>
             <span class="fechar-modal">x</span>
         </header>
         <div class="corpo-modal">
@@ -231,9 +263,9 @@
 
                 <input type="button" value="Calcular" onclick="exercicio8.calculo()">
 
-                <p id="resultadoA"></p>
-                <p id="resultadoB"></p>
-                <p id="resultadoC"></p>
+                Área do quadrado:<p id="resultadoA"></p>
+                Área do triângulo:<p id="resultadoB"></p>
+                Área do trapézio:<p id="resultadoC"></p>
             </div>
         </div>
         <footer><button class="fechar-modal">Ok</button></footer>
@@ -241,7 +273,8 @@
     </div>
     <div id="exercicio9" class="modal">
         <header>
-            <h2>Exercicio 9</h2>
+            <h5>Fazer um programa para ler uma duração de tempo em segundos, daí
+                imprimir na tela esta duração no formato horas:minutos:segundos.</h5>
             <span class="fechar-modal">x</span>
         </header>
         <div class="corpo-modal">
@@ -267,22 +300,24 @@
     </div>
     <div id="exercicio10" class="modal">
         <header>
-            <h2>Exercicio 10</h2>
+            <h5>Fazer um programa para ler três números inteiros. Em seguida, mostrar
+                qual o menor dentre os três números lidos. Em caso de empate, mostrar
+                apenas uma vez.</h5>
             <span class="fechar-modal">x</span>
         </header>
         <div class="corpo-modal">
             <div>
                 <label>Primeiro valor:
-                    <input id="valorA" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    <input id="numeralA" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                 </label>
                 <label>Segundo valor:
-                    <input id="valorB" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    <input id="numeralB" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                 </label>
                 <label>Terceiro valor:
-                    <input id="valorC" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    <input id="numeralC" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                 </label>
 
-                <input type="button" value="Clique Aqui" onclick="calculo()">
+                <input type="button" value="Clique Aqui" onclick="numMenor()">
                 <p id="resultadoMenor"></p>
             </div>
         </div>
@@ -291,7 +326,11 @@
     </div>
     <div id="exercicio11" class="modal">
         <header>
-            <h2>Exercicio 11</h2>
+            <h5>Fazer um programa para ler as duas notas que um aluno obteve no
+                primeiro e segundo semestres de uma disciplina anual. Em seguida,
+                mostrar a nota final que o aluno obteve (com uma casa decimal) no ano
+                juntamente com um texto explicativo. Caso a nota final do aluno seja
+                inferior a 60.00, mostrar a mensagem "REPROVADO".</h5>
             <span class="fechar-modal">x</span>
         </header>
         <div class="corpo-modal">
@@ -521,7 +560,7 @@
             <div>
                 <label>Digite um valor:
                     <input id="valorInteiro" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-                    <input type="button" value="Calcular" onclick="calculo()">
+                    <input type="button" value="Calcular" onclick="calculoX()">
                 </label>
                 <p id="verPares"></p>
             </div>
@@ -578,12 +617,12 @@
         <div class="corpo-modal">
             <div>
                 <label>Inserir números:
-                    <input type="text" class="input1" />
+                    <input type="text" class="input11" />
                 </label>
-
-                <button class="ordenarInt">Ordenar em ordem crescente</button>
-
-                <h2 id="resOrdem"></h2>
+            
+                <button class="ordenar11">Ordenar em ordem crescente</button>
+            
+                <h2 class="total" id="resultado11"></h2>
             </div>
         </div>
         <footer><button class="fechar-modal">Ok</button></footer>
@@ -659,13 +698,15 @@
         </header>
         <div class="corpo-modal">
             <div>
+                <h2>Verificar menor e maior número!</h2>
+                <h4>Separados por vírgula:</h4>
                 <label>Inserir números:
-                    <input type="text" class="num1" placeholder="Insira 5 números">
+                    <input type="text" class="input1" placeholder="Insira 5 números" >
                 </label>
-
-                <button class="ordMinMax">Verificar</button>
-
-                <h2 class="totalOrd" id="resultOrd"></h2>
+            
+                <button class="ordenar1">Verificar</button>
+            
+                <h2 class="total" id="resultadoOrdem"></h2>
             </div>
         </div>
         <footer><button class="fechar-modal">Ok</button></footer>

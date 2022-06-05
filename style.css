@@ -1,5 +1,30 @@
+* {
+    margin: 0;
+}
+
 .cabecalho {
-    background-color: rgb(15, 131, 167);
+    padding: 0;
+    background-color: rgb(74, 188, 223);
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+button {
+    margin: 1px;
+}
+
+.text {
+    
+    margin-top: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.container {
+    margin-right: 10px;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .modal {
