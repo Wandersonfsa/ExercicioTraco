@@ -1,3 +1,15 @@
+$('.exercicios').on('keypress', function () {
+    var regex = new RegExp("[0-9.]+$");
+    var _this = this;
+    // Curta pausa para esperar colar para completar
+    setTimeout(function () {
+        var texto = $(_this).val();
+        if (!regex.test(texto)) {
+            $(_this).val(texto.substring(0, (texto.length - 1)))
+        }
+    }, 100);
+});
+
 //Script exercício 1
 
 var exercicioUM = {
@@ -17,14 +29,27 @@ var exercicioUM = {
         var valor = Number(saidaValor.value);
 
         this.areaTerreno = largura * comprimento;
+        this.precoTerreno = valor * areaTerreno.innerHTML;
+        this.areaTerreno = largura * comprimento;
         calculoArea.innerHTML = (this.areaTerreno).toFixed(2);
-
         this.precoTerreno = valor * areaTerreno.innerHTML;
         calculoPreco.innerHTML = (this.precoTerreno).toFixed(2);
     }
 };
 
 //Script exercício 2
+
+$('.exercicio2').on('keypress', function () {
+    var regex = new RegExp("[0-9.]+$");
+    var _this = this;
+    // Curta pausa para esperar colar para completar
+    setTimeout(function () {
+        var texto = $(_this).val();
+        if (!regex.test(texto)) {
+            $(_this).val(texto.substring(0, (texto.length - 1)))
+        }
+    }, 100);
+});
 
 var exercicio = {
 
@@ -529,7 +554,14 @@ function tabuada() {
     for (let y = 1; y <= 10; y++) {
         let multiplicacao = vfinal * y;
 
-        resposta.innerHTML += `${vfinal} x ${y} = ${multiplicacao} <br/>`; //
+        if (vfinal > 10) {
+            alert ('Digite um número de 1 a 10')
+            break;
+        } if (vfinal <= 10) {
+            resposta.innerHTML += `${vfinal} x ${y} = ${multiplicacao} <br/>`; 
+        }
+
+ 
     };
 };
 // Script exercício 23
@@ -557,21 +589,34 @@ botao.addEventListener('click', () => {
 
 // Script exercício 24
 
-const input11 = document.querySelector(".input11");
+$('.exercicio24').on('keypress', function () {
+    var regex = new RegExp("[0-9.,]+$");
+    var _this = this;
+    // Curta pausa para esperar colar para completar
+    setTimeout(function () {
+        var texto = $(_this).val();
+        if (!regex.test(texto)) {
+            $(_this).val(texto.substring(0, (texto.length - 1)))
+        }
+    }, 100);
+});
+
+
+const input11 = document.querySelector("#input11");
 const btnConvert = document.querySelector(".ordenar11");
 
 function sortOrdem(inputText) {
-  let numArray = inputText.split(",");
-  numArray.sort((a,b) => {return a - b});
+    let numArray = inputText.split(",");
+    numArray.sort((a, b) => { return a - b });
 
-  document.getElementById("resultado11").innerText = (` ${ numArray} `); 
+    document.getElementById("resultado11").innerText = (` ${numArray} `);
 
-  return  numArray;
+    return numArray;
 }
 
 
 btnConvert.addEventListener('click', function () {
-  sortOrdem(input11.value);
+    sortOrdem(input11.value);
 
 });
 
@@ -678,22 +723,34 @@ function verPalindrono() {
         } else { resultado.innerHTML = 'Palindrono' }
 };
 // Script exercício 28
+$('.exercicio28').on('keypress', function () {
+    var regex = new RegExp("[0-9.,]+$");
+    var _this = this;
+    // Curta pausa para esperar colar para completar
+    setTimeout(function () {
+        var texto = $(_this).val();
+        if (!regex.test(texto)) {
+            $(_this).val(texto.substring(0, (texto.length - 1)))
+        }
+    }, 100);
+});
 
-const input1 = document.querySelector(".input1");
+
+const input1 = document.querySelector("#input1");
 const btnConvert1 = document.querySelector(".ordenar1");
 
 function ordem(inputText) {
-  let numArray = inputText.split(",");
-  numArray.sort((a,b) => {return a - b});
+    let numArray = inputText.split(",");
+    numArray.sort((a, b) => { return a - b });
 
-  document.getElementById("resultadoOrdem").innerHTML = (` Menor número = ${ Math.min(...numArray)} Maior número = ${Math.max(...numArray)} `); 
+    document.getElementById("resultadoOrdem").innerHTML = (` Menor número = ${Math.min(...numArray)}<br/> Maior número = ${Math.max(...numArray)} `);
 
-  return  numArray;
+    return numArray;
 }
 
 
 btnConvert1.addEventListener('click', function () {
-  ordem(input1.value);
+    ordem(input1.value);
 
 });
 console.log(ordem)

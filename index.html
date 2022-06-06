@@ -64,13 +64,13 @@
         <div class="corpo-modal">
             <div>
                 <label>Largura do terreno
-                    <input id="largura">
+                    <input class="exercicios" id="largura">
                 </label><br>
                 <label>Comprimento do terreno
-                    <input id="comprimento">
+                    <input class="exercicios" id="comprimento">
                 </label><br>
                 <label>Valor do metro quadrado
-                    <input id="valor">
+                    <input class="exercicios" id="valor">
                 </label><br>
                 <input type="button" value="Calcular" onclick="exercicioUM.calculo()"><br>
                 
@@ -91,10 +91,10 @@
         <div class="corpo-modal">
             <div>
                 <label>Base do retângulo:
-                    <input id="base">
+                    <input class="exercicios" id="base">
                 </label><br>
                 <label>Altura do retângulo:
-                    <input id="altura">
+                    <input class="exercicios" id="altura">
                 </label><br>
                 <input type="button" value="Calcular" onclick="exercicio.calculo()">
                 <p id="area">Área =</p>
@@ -118,13 +118,13 @@
                     <input type="text" id="nome1">
                 </label><br>
                 <label>Idade1:
-                    <input id="idade1">
+                    <input class="exercicios" id="idade1">
                 </label><br>
                 <label>Nome2:
                     <input id="nome2">
                 </label><br>
                 <label>Idade2:
-                    <input id="idade2">
+                    <input class="exercicios" id="idade2" >
                 </label><br>
                 <input type="button" value="Media" onclick="exercicio3.calculo()">
 
@@ -146,15 +146,15 @@
         <div class="corpo-modal">
             <div>
                 <label>Preço unitário do produto:
-                    <input id="preco">
+                    <input class="exercicios" id="preco">
                 </label><br>
 
                 <label>Quantidade comprada:
-                    <input id="quantidade">
+                    <input class="exercicios" id="quantidade">
                 </label><br>
 
                 <label>Dinheiro recebido:
-                    <input id="pagamento">
+                    <input class="exercicios" id="pagamento">
                 </label><br>
 
                 <input type="button" value="Receber" onclick="exercicio4.calculo()">
@@ -175,10 +175,10 @@
         <div class="corpo-modal">
             <div>
                 <label>Digite o valor do raio do círculo:
-                    <input id="raio">
+                    <input class="exercicios" id="raio">
                 </label><br>
 
-                <input type="button" id="raio" value="Verificar" onclick="exercicio5.calculo()"><br>
+                <input  type="button" id="raio" value="Verificar" onclick="exercicio5.calculo()"><br>
 
                 <div id="area"></div>
             </div>
@@ -280,13 +280,13 @@
         <div class="corpo-modal">
             <div>
                 <label>Digite a duração em segundos:
-                    <input id="segundosA">
+                    <input class="exercicios" id="segundosA">
                 </label><br>
                 <label>Digite a duração em segundos:
-                    <input id="segundosB">
+                    <input class="exercicios" id="segundosB">
                 </label><br>
                 <label>Digite a duração em segundos:
-                    <input id="segundosC">
+                    <input class="exercicios" id="segundosC">
                 </label><br>
 
                 <input type="button" value="pressione" onclick="somar()">
@@ -359,13 +359,13 @@
         <div class="corpo-modal">
             <div>
                 <label>Coeficiente a:
-                    <input id="coeficienteA">
+                    <input class="exercicios" id="coeficienteA">
                 </label><br>
                 <label>Coeficiente b:
-                    <input id="coeficienteB">
+                    <input class="exercicios" id="coeficienteB">
                 </label><br>
                 <label>Coeficiente c:
-                    <input id="coeficienteC">
+                    <input class="exercicios" id="coeficienteC">
                 </label><br>
                 <input type="button" value="Pressione" onclick="exercicio12.calculo()">
                 <p id="calculoCo"></p>
@@ -385,7 +385,7 @@
         <div class="corpo-modal">
             <div>
                 <label>Digite a quantidade de minutos:
-                    <input type="text" id="valorMin">
+                    <input type="text" class="exercicios" id="valorMin">
                 </label><br>
                 <input type="button" value="Pressione" onclick="calculoMin()">
                 <p id="precoMin"></p>
@@ -410,7 +410,7 @@
                     <input id="precoProduto" class="valor">
                 </label><br>
                 <label>Quantidade comprada:
-                    <input id="qtdComprada">
+                    <input class="exercicios" id="qtdComprada">
                 </label><br>
                 <label>Dinheiro recebido:
                     <input class="valor" id="dinheiro">
@@ -471,8 +471,8 @@
         <div class="corpo-modal">
             <div>
                 <label>Digite dois números inteiros:
-                    <input id="inteiroA" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-                    <input id="inteiroB" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    <input class="exercicios" id="inteiroA" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    <input class="exercicios" id="inteiroB" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                 </label>
                 <input type="button" value="Resultado" onclick="ordenarInteiros()"><br>
                 <p id="ordemInteiros"></p>
@@ -577,7 +577,7 @@
         </header>
         <div class="corpo-modal">
             <div>
-                Tabuada do número: <input id="numTab"> <br />
+                Tabuada do número: <input class="exercicios" id="numTab"> <br />
                 <input type="button" value="Tabuada" onclick="tabuada()"><br />
                 Tabuada: <br />
                 <p id="calculoTab"></p>
@@ -617,7 +617,7 @@
         <div class="corpo-modal">
             <div>
                 <label>Inserir números:
-                    <input type="text" class="input11" />
+                    <input type="text" class="exercicio24" id="input11" />
                 </label>
             
                 <button class="ordenar11">Ordenar em ordem crescente</button>
@@ -638,9 +638,9 @@
         <div class="corpo-modal">
             <div>
                 <label>Dia do Nascimento:
-                    <input id="dia"><br>
+                    <input class="exercicios" id="dia"><br>
                     Mês do Nascimento:
-                    <input id="mes"><br>
+                    <input class="exercicios" id="mes"><br>
                 </label>
                 <input type="button" value="Signo" onclick="signo()">
                 <p id="signo"></p>
@@ -701,7 +701,7 @@
                 <h2>Verificar menor e maior número!</h2>
                 <h4>Separados por vírgula:</h4>
                 <label>Inserir números:
-                    <input type="text" class="input1" placeholder="Insira 5 números" >
+                    <input type="text" class="exercicio28" id="input1" placeholder="Insira 5 números" >
                 </label>
             
                 <button class="ordenar1">Verificar</button>
@@ -741,7 +741,7 @@
         <div class="corpo-modal">
             <div>
                 <label>Digite um numero de 0 a 99:
-                    <input id="entNum">
+                    <input class="exercicios" id="entNum">
                 </label>
                 <input type="button" value="Verificar" onclick="escrever()">
                 <p id="extensoNum"></p>
