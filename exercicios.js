@@ -353,6 +353,18 @@ function calculoMin() {
 
 // Script exercício 14
 
+$('.exercicio14').on('keypress', function () {
+    var regex = new RegExp("[0-9]+$");
+    var _this = this;
+    // Curta pausa para esperar colar para completar
+    setTimeout(function () {
+        var texto = $(_this).val();
+        if (!regex.test(texto)) {
+            $(_this).val(texto.substring(0, (texto.length - 1)))
+        }
+    }, 100);
+});
+
 $(function () {
     $('.valor').maskMoney({ decimal: '.', thousands: '', precision: 2 });
 });
