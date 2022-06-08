@@ -578,7 +578,7 @@ function tabuada() {
 };
 // Script exercício 23
 
-function somaImp() {
+function somaImpar() {
     let valorA = document.getElementById("inicial");
     let valorB = document.getElementById("final");
     let resultado = document.getElementById("somaImp");
@@ -594,9 +594,9 @@ function somaImp() {
         }
     }
 };
-let botao = document.getElementById("botao");
+let botao = document.getElementById("botao1");
 botao.addEventListener('click', () => {
-    somaImp();
+    somaImpar();
 });
 
 // Script exercício 24
@@ -711,15 +711,17 @@ function somarLetras() {
     let palavra = document.getElementById("entPalavra");
     let result = document.getElementById("ordPalavra");
     const vogais = 'aeiou';
-    let frase = palavra.value;
+    const frase = palavra.value;
     let contarVogal = 0;
     let contarCons = 0;
     for (let i = 0; i < vogais.length; i++) {
         for (let k = 0; k < frase.length; k++) {
             if (vogais[i] == frase[k]) {
                 contarVogal++
+                
                 result.innerHTML = `Vogais: ${contarVogal} Consoantes: ${contarCons}`;
-            }
+                
+            } 
         }
     }
 };
